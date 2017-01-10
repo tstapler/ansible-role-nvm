@@ -16,6 +16,7 @@
     group=root
     mode=0755
   become: true
+  when: "nvm_env == 'system'"
 
 - include: "system/install_versions.yml"
   when: "nvm_env == 'system'"

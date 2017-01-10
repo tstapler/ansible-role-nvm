@@ -3,6 +3,8 @@ nvm_env: system
 nvm_version: v0.31.6
 nvm_default_node_version: stable
 
+nvm_install_shell: bash
+
 nvm_node_versions:
   - stable
 
