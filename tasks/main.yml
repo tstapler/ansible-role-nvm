@@ -8,7 +8,7 @@
 - include: "user/install.yml"
   when:  "nvm_env == 'user'"
 
-- name: add nvm initialization to profile
+- name: Add nvm initialization to profile
   template: >
     src=nvm.sh.j2
     dest=/etc/profile.d/nvm.sh
