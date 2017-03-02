@@ -1,6 +1,6 @@
 ---
 - name: install versions
-  shell: "{{nvm_install_shell}} -lc nvm install {{ item }}"
+  shell: "{{ nvm_install_shell }} -lc nvm install {{ item }}"
   register: output
   changed_when: "'already installed.' not in output.stderr"
   with_items: "{{ nvm_node_versions }}"

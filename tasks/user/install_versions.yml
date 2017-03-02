@@ -1,6 +1,6 @@
 ---
 - name: install versions for each user
-  shell: "{{nvm_install_shell}} -lc nvm install {{ item.1 }}"
+  shell: "{{ nvm_install_shell }} -lc nvm install {{ item.1 }}"
   become: true
   become_user: "{{ item.0 }}"
   with_nested:
